@@ -42,12 +42,8 @@ public class Main extends Application {
                 primaryStage.close();
             }
             // consume event
-            else if (result.get() == ButtonType.NO){
-                event.consume();
-            }
             else {
                 event.consume();
-
             }
 
         });

@@ -1,5 +1,6 @@
 package pizzashop.gui;
 
+import javafx.event.Event;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.VBox;
@@ -36,7 +37,7 @@ public class OrdersGUI {
      stage.setTitle("Table"+getTableNumber()+" order form");
      stage.setResizable(false);
      // disable X on the window
-     stage.setOnCloseRequest(event -> event.consume());
+     stage.setOnCloseRequest(Event::consume);
      stage.setScene(new Scene(vBoxOrders));
      stage.show();
     }

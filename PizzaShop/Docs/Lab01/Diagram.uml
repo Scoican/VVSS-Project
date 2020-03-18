@@ -58,7 +58,7 @@
       <point x="79.5" y="210.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.40000000000000013" x="222.74999999999955" y="290.2499999999998" />
+  <settings layout="Hierarchic Group" zoom="0.6000000000000001" x="518.5000000000002" y="350.83333333333326" />
   <SelectedNodes>
     <node>pizzashop.gui.OrdersGUI</node>
     <node>pizzashop.service.PaymentService</node>
@@ -84,8 +84,8 @@
     <Category>Fields</Category>
     <Category>Constructors</Category>
     <Category>Methods</Category>
-    <Category>Inner Classes</Category>
     <Category>Properties</Category>
+    <Category>Inner Classes</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
