@@ -16,7 +16,7 @@ public class MenuRepository {
 
     private void readMenu(){
         ClassLoader classLoader = MenuRepository.class.getClassLoader();
-        File file = new File(classLoader.getResource(filename).getFile());
+        File file = new File("C:\\Users\\Scoican\\Desktop\\Work\\Validation and verification of software systems\\VVSS-Project\\PizzaShop\\src\\main\\resources\\data\\menu.txt");
         this.listMenu= new ArrayList();
         BufferedReader br = null;
         try {

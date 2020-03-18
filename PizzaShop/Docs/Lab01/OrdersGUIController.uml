@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>pizzashop.controller.OrdersGUIController</OriginalElement>
+  <nodes>
+    <node x="824.0" y="1103.0">pizzashop.gui.OrdersGUI</node>
+    <node x="879.0" y="708.0">pizzashop.service.PaymentService</node>
+    <node x="283.0" y="708.0">pizzashop.model.MenuDataModel</node>
+    <node x="417.0" y="574.0">pizzashop.model.PaymentType</node>
+    <node x="842.0" y="471.0">javafx.application.Application.Parameters</node>
+    <node x="335.0" y="12.0">java.io.Serializable</node>
+    <node x="37.5" y="708.0">pizzashop.service.PaymentOperation</node>
+    <node x="681.0" y="0.0">javafx.application.Application</node>
+    <node x="598.0" y="708.0">pizzashop.controller.KitchenGUIController</node>
+    <node x="359.5" y="103.0">java.lang.Enum</node>
+    <node x="0.0" y="0.0">pizzashop.controller.OrdersGUIController</node>
+    <node x="0.0" y="1103.0">pizzashop.repository.PaymentRepository</node>
+    <node x="0.0" y="855.0">pizzashop.service.PaymentAlert</node>
+    <node x="489.0" y="0.0">java.lang.Comparable</node>
+    <node x="1135.0" y="1103.0">pizzashop.gui.KitchenGUI</node>
+    <node x="1067.0" y="0.0">pizzashop.controller.MainGUIController</node>
+    <node x="540.0" y="1103.0">pizzashop.model.Payment</node>
+    <node x="244.0" y="1103.0">pizzashop.repository.MenuRepository</node>
+    <node x="674.0" y="503.0">pizzashop.Main</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="pizzashop.service.PaymentAlert" target="pizzashop.service.PaymentOperation">
+      <point x="0.0" y="-101.5" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="javafx.application.Application.Parameters" target="javafx.application.Application">
+      <point x="0.0" y="-69.5" />
+      <point x="932.0" y="446.0" />
+      <point x="919.5" y="446.0" />
+      <point x="79.5" y="210.5" />
+    </edge>
+    <edge source="java.lang.Enum" target="java.io.Serializable">
+      <point x="-60.5" y="-210.5" />
+      <point x="420.0" y="78.0" />
+      <point x="402.0" y="78.0" />
+      <point x="0.0" y="14.5" />
+    </edge>
+    <edge source="pizzashop.model.PaymentType" target="java.lang.Enum">
+      <point x="0.0" y="-37.5" />
+      <point x="0.0" y="210.5" />
+    </edge>
+    <edge source="java.lang.Enum" target="java.lang.Comparable">
+      <point x="60.5" y="-210.5" />
+      <point x="541.0" y="78.0" />
+      <point x="559.0" y="78.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="pizzashop.Main" target="javafx.application.Application">
+      <point x="0.0" y="-37.5" />
+      <point x="748.0" y="446.0" />
+      <point x="760.5" y="446.0" />
+      <point x="-79.5" y="210.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.40000000000000013" x="222.74999999999955" y="553.9999999999998" />
+  <SelectedNodes>
+    <node>pizzashop.gui.OrdersGUI</node>
+    <node>pizzashop.service.PaymentService</node>
+    <node>pizzashop.model.MenuDataModel</node>
+    <node>pizzashop.model.PaymentType</node>
+    <node>javafx.application.Application.Parameters</node>
+    <node>java.io.Serializable</node>
+    <node>pizzashop.service.PaymentOperation</node>
+    <node>javafx.application.Application</node>
+    <node>pizzashop.controller.KitchenGUIController</node>
+    <node>java.lang.Enum</node>
+    <node>pizzashop.controller.OrdersGUIController</node>
+    <node>pizzashop.repository.PaymentRepository</node>
+    <node>pizzashop.service.PaymentAlert</node>
+    <node>java.lang.Comparable</node>
+    <node>pizzashop.gui.KitchenGUI</node>
+    <node>pizzashop.controller.MainGUIController</node>
+    <node>pizzashop.model.Payment</node>
+    <node>pizzashop.repository.MenuRepository</node>
+    <node>pizzashop.Main</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

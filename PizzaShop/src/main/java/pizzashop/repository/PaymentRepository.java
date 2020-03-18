@@ -21,7 +21,7 @@ public class PaymentRepository {
 
     private void readPayments(){
         ClassLoader classLoader = PaymentRepository.class.getClassLoader();
-        File file = new File(classLoader.getResource(filename).getFile());
+        File file = new File("C:\\Users\\Scoican\\Desktop\\Work\\Validation and verification of software systems\\VVSS-Project\\PizzaShop\\src\\main\\resources\\data\\payments.txt");
         BufferedReader br = null;
         try {
             br = new BufferedReader(new FileReader(file));
@@ -60,7 +60,7 @@ public class PaymentRepository {
 
     public void writeAll(){
         ClassLoader classLoader = PaymentRepository.class.getClassLoader();
-        File file = new File(classLoader.getResource(filename).getFile());
+        File file = new File("C:\\Users\\Scoican\\Desktop\\Work\\Validation and verification of software systems\\VVSS-Project\\PizzaShop\\src\\main\\resources\\data\\payments.txt");
 
         BufferedWriter bw = null;
         try {
