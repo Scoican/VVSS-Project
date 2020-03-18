@@ -1,7 +1,5 @@
 package pizzashop.repository;
 
-import javafx.collections.ObservableList;
-import pizzashop.model.MenuDataModel;
 import pizzashop.model.Payment;
 import pizzashop.model.PaymentType;
 
@@ -11,7 +9,6 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class PaymentRepository {
-    private static String filename = "data/payments.txt";
     private List<Payment> paymentList;
 
     public PaymentRepository(){
@@ -20,7 +17,6 @@ public class PaymentRepository {
     }
 
     private void readPayments(){
-        ClassLoader classLoader = PaymentRepository.class.getClassLoader();
         File file = new File("C:\\Users\\Scoican\\Desktop\\Work\\Validation and verification of software systems\\VVSS-Project\\PizzaShop\\src\\main\\resources\\data\\payments.txt");
         BufferedReader br = null;
         try {
@@ -31,8 +27,6 @@ public class PaymentRepository {
                 paymentList.add(payment);
             }
             br.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -59,7 +53,6 @@ public class PaymentRepository {
     }
 
     public void writeAll(){
-        ClassLoader classLoader = PaymentRepository.class.getClassLoader();
         File file = new File("C:\\Users\\Scoican\\Desktop\\Work\\Validation and verification of software systems\\VVSS-Project\\PizzaShop\\src\\main\\resources\\data\\payments.txt");
 
         BufferedWriter bw = null;

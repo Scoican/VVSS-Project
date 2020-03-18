@@ -8,14 +8,12 @@ import java.util.List;
 import java.util.StringTokenizer;
 
 public class MenuRepository {
-    private static String filename = "data/menu.txt";
     private List<MenuDataModel> listMenu;
 
     public MenuRepository(){
     }
 
     private void readMenu(){
-        ClassLoader classLoader = MenuRepository.class.getClassLoader();
         File file = new File("C:\\Users\\Scoican\\Desktop\\Work\\Validation and verification of software systems\\VVSS-Project\\PizzaShop\\src\\main\\resources\\data\\menu.txt");
         this.listMenu= new ArrayList();
         BufferedReader br = null;
@@ -27,8 +25,6 @@ public class MenuRepository {
                 listMenu.add(menuItem);
             }
             br.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
