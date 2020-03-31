@@ -1,6 +1,6 @@
 
-N	java:S1063"9Replace this use of System.out or System.err by a logger.(ú•€Ë
-C
-java:S1604"(Make this anonymous inner class a lambda(œ˜‡îÿÿÿÿÿ
-N	java:S1065"9Replace this use of System.out or System.err by a logger.(ú•€Ë
-S	java:S1064"9Replace this use of System.out or System.err by a logger.(‡±§­üÿÿÿÿ
+U	java:S1063"9Replace this use of System.out or System.err by a logger.(ú•€Ë8©Ø¦ÌŽ.
+J
+java:S1604"(Make this anonymous inner class a lambda(œ˜‡îÿÿÿÿÿ8´›µñŽ.
+Z	java:S1064"9Replace this use of System.out or System.err by a logger.(‡±§­üÿÿÿÿ8©Ø¦ÌŽ.
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(ú•€Ë8©Ø¦ÌŽ.

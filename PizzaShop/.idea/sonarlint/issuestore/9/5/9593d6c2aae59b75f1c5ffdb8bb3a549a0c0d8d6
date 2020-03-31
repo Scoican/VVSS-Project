@@ -1,19 +1,17 @@
 
-N	java:S106h"9Replace this use of System.out or System.err by a logger.(ú•€Ë
-œ
-java:S1186A"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(È’Êøÿÿÿÿ
-S
-java:S26965"6Make the enclosing method "static" or remove this set.(ûĞ¸—8Ñ´²ğ.
-N	java:S106f"9Replace this use of System.out or System.err by a logger.(ÑºŠ‰
-N	java:S106g"9Replace this use of System.out or System.err by a logger.(¢ùù
-R
-java:S22095"5Change this instance-reference to a static reference.(ûĞ¸—8Ñ´²ğ.
-p
-java:S1104;"ZMake observableList a static final constant or non-public and provide accessors if needed.(Ù½©Æ
-N	java:S106e"9Replace this use of System.out or System.err by a logger.(ú•€Ë
-n
-java:S2293<"YReplace the type specification in this constructor call with the diamond operator ("<>").(›ÊØ
-P
-java:S2209j"5Change this instance-reference to a static reference.(…î˜±ÿÿÿÿÿ
+L
+java:S26965"6Make the enclosing method "static" or remove this set.(ûĞ¸—
 r
 java:S1450="WRemove the "menuData" field and declare it as a local variable in the relevant methods.(…™²»ùÿÿÿÿ
+U	java:S106h"9Replace this use of System.out or System.err by a logger.(ú•€Ë8ôœµñ.
+K
+java:S22095"5Change this instance-reference to a static reference.(ûĞ¸—
+W
+java:S2209j"5Change this instance-reference to a static reference.(…î˜±ÿÿÿÿÿ8ôœµñ.
+U	java:S106g"9Replace this use of System.out or System.err by a logger.(¢ùù8ôœµñ.
+n
+java:S2293<"YReplace the type specification in this constructor call with the diamond operator ("<>").(›ÊØ
+U	java:S106e"9Replace this use of System.out or System.err by a logger.(ú•€Ë8ôœµñ.
+p
+java:S1104;"ZMake observableList a static final constant or non-public and provide accessors if needed.(Ù½©Æ
+U	java:S106f"9Replace this use of System.out or System.err by a logger.(ÑºŠ‰8ôœµñ.

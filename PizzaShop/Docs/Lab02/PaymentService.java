@@ -30,9 +30,6 @@ public class PaymentService {
         if(amount<=0){
             throw new Exception("Amount value is invalid!");
         }
-        if(type!=null){
-            throw new Exception("Amount value is invalid!");
-        }
         Payment payment= new Payment(table, type, amount);
         payRepo.add(payment);
     }

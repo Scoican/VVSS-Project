@@ -1,14 +1,14 @@
 
-W
-java:S1075"ARefactor your code to get this URI from a customizable parameter.(Ù¯Í§
+^
+java:S10758"ARefactor your code to get this URI from a customizable parameter.(Ù¯Í§8úÖÈîŽ.
+S	java:S106>"9Replace this use of System.out or System.err by a logger.(Ñ£±Ôúÿÿÿÿ
 E
-java:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8ù«¾ðŽ.
->
-java:S1148D"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
-W
-java:S10758"ARefactor your code to get this URI from a customizable parameter.(Ù¯Í§
+java:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8”žµñŽ.
+^
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(Ù¯Í§8”žµñŽ.
 b
 java:S2095<"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ù»ý
-b
-java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ãÈˆ¦
-S	java:S106>"9Replace this use of System.out or System.err by a logger.(Ñ£±Ôúÿÿÿÿ
+i
+java:S2095"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ãÈˆ¦8”žµñŽ.
+>
+java:S1148D"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
