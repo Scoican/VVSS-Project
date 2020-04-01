@@ -53,3 +53,7 @@ Rtarget/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 a
 1src/main/java/pizzashop/service/PaymentAlert.java,9\0\902001140ed6ee8dd55076f5d2572971ee237995
+m
+=src/test/java/pizzashop/repository/PaymentRepositoryTest.java,c\5\c592a8c69fcaa017313e880a273136188f2dbb06
+g
+7src/test/java/pizzashop/service/PaymentServiceTest.java,d\f\dfb2ffca75f8c230873cbe86421dceec0d51b1dc
