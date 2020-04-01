@@ -51,7 +51,7 @@ class PaymentServiceTest {
     void addPaymentBVAValid(){
         PaymentService service = new PaymentService(new MenuRepository(),new PaymentRepository());
         try{
-            service.addPayment(1, PaymentType.CARD,10);
+            service.addPayment(1, PaymentType.CASH,10);
             assertTrue(true);
         } catch (Exception e) {
             fail();
@@ -64,7 +64,7 @@ class PaymentServiceTest {
     void addPaymentBVAInvalid(){
         PaymentService service = new PaymentService(new MenuRepository(),new PaymentRepository());
         try{
-            service.addPayment(0, PaymentType.CARD,10);
+            service.addPayment(0, PaymentType.CASH,10);
             fail();
         } catch (Exception e) {
             assertTrue(true);
@@ -77,7 +77,7 @@ class PaymentServiceTest {
         PaymentService service = new PaymentService(new MenuRepository(),new PaymentRepository());
         //BVA valid
         try{
-            service.addPayment(8, PaymentType.CARD,10);
+            service.addPayment(8, PaymentType.CASH,10);
             assertTrue(true);
         } catch (Exception e) {
             fail();
