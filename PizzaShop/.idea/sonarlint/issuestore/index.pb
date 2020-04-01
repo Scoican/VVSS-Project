@@ -25,10 +25,6 @@ f
 6src/main/java/pizzashop/repository/MenuRepository.java,f\8\f88a69fdfce80aab608fa2398a93044f03454ca7
 i
 9src/main/java/pizzashop/repository/PaymentRepository.java,e\f\ef6998620bd1015c5e4bddc19da8b0331cb111bf
-P
- src/main/resources/data/menu.txt,1\6\169cbb2685aaaf47ce057954043f14d1f67c6ee5
-T
-$src/main/resources/data/payments.txt,c\0\c0b53a09efc26842d57680470ce5bfe2fce0b233
 U
 %src/main/resources/fxml/mainFXML.fxml,f\7\f7787231a06a6145ce9bc001ccb7f132931f81cd
 Z

@@ -28,7 +28,6 @@ class PaymentServiceTest {
             service.addPayment(nrTable, PaymentType.CARD,10);
             assertTrue(true);
         } catch (Exception e) {
-            e.printStackTrace();
             fail();
         }
     }
@@ -42,7 +41,6 @@ class PaymentServiceTest {
             service.addPayment(-4, PaymentType.CARD,10);
             fail();
         } catch (Exception e) {
-            e.printStackTrace();
             assertTrue(true);
         }
     }
@@ -56,7 +54,6 @@ class PaymentServiceTest {
             service.addPayment(1, PaymentType.CARD,10);
             assertTrue(true);
         } catch (Exception e) {
-            e.printStackTrace();
             fail();
         }
     }
@@ -70,7 +67,6 @@ class PaymentServiceTest {
             service.addPayment(0, PaymentType.CARD,10);
             fail();
         } catch (Exception e) {
-            e.printStackTrace();
             assertTrue(true);
         }
     }
@@ -84,7 +80,6 @@ class PaymentServiceTest {
             service.addPayment(8, PaymentType.CARD,10);
             assertTrue(true);
         } catch (Exception e) {
-            e.printStackTrace();
             fail();
         }
         //BVA invalid
@@ -92,7 +87,6 @@ class PaymentServiceTest {
             service.addPayment(9, PaymentType.CARD,10);
             fail();
         } catch (Exception e) {
-            e.printStackTrace();
             assertTrue(true);
         }
         //ECP invalid
@@ -100,7 +94,6 @@ class PaymentServiceTest {
             service.addPayment(8, null,10);
             fail();
         } catch (Exception e) {
-            e.printStackTrace();
             assertTrue(true);
         }
         //ECP valid
@@ -108,7 +101,6 @@ class PaymentServiceTest {
             service.addPayment(8, PaymentType.CARD,10);
             assertTrue(true);
         } catch (Exception e) {
-            e.printStackTrace();
             fail();
         }
     }
