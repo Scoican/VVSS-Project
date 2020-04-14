@@ -1,5 +1,5 @@
 
-W
-java:S1191"5Use classes from the Java API instead of Sun classes.(áÍäüşÿÿÿÿ8ÚÎŠ“.
 v
 java:S1128"TRemove this unused import 'com.sun.xml.internal.ws.api.message.ExceptionHasMessage'.(áÍäüşÿÿÿÿ8ÚÎŠ“.
+W
+java:S1191"5Use classes from the Java API instead of Sun classes.(áÍäüşÿÿÿÿ8ÚÎŠ“.
