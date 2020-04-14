@@ -38,6 +38,9 @@ public class PaymentService {
     }
 
     public double getTotalAmount(PaymentType type){
+        if(type==null){
+            throw new IllegalArgumentException("Payment Type is null!");
+        }
         double total=0.0f;
         List<Payment> l=getPayments();
         if ((l==null) ||(l.isEmpty())) return total;
