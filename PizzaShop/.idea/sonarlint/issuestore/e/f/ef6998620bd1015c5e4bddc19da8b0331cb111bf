@@ -1,11 +1,11 @@
 
-i
-java:S2095 "LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ãÈˆ¦8”µñ.
 X	java:S125H"<This block of commented-out lines of code should be removed.(ú“÷ú8’µ¼¦“.
-o	java:S100R"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ‹úÿÿÿÿ8œéØÉ—.
-b
-java:S2095F"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ù»ı
 c
 java:S1075"ARefactor your code to get this URI from a customizable parameter.(ø¡ôïüÿÿÿÿ8Œî¹É—.
 c
 java:S1075B"ARefactor your code to get this URI from a customizable parameter.(ø¡ôïüÿÿÿÿ8ªÌÓÉ—.
+b
+java:S2095F"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ù»ı
+i
+java:S2095 "LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ãÈˆ¦8”µñ.
+o	java:S100R"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ‹úÿÿÿÿ8œéØÉ—.
