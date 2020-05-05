@@ -48,6 +48,5 @@ public class PaymentServiceMockitoTesting {
 
         assertEquals(1,paymentService.getPayments().size());
         Mockito.verify(paymentRepository,Mockito.times(2)).getAll();
-
     }
 }
