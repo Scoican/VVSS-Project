@@ -11,12 +11,7 @@ import static org.mockito.Mockito.mock;
 class PaymentRepositoryTest {
 
     private String filePath = "C:\\Users\\Scoican\\Desktop\\Work\\Validation and verification of software systems\\VVSS-Project\\PizzaShop\\src\\main\\resources\\data\\paymentsTest.txt";
-    private Payment payment;
 
-    @BeforeAll
-    public void setUp(){
-        payment=mock(Payment.class);
-    }
 
     @Test
     void testAddValidPayment() {

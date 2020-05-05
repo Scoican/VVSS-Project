@@ -13,8 +13,9 @@ import pizzashop.repository.PaymentRepository;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class PaymentServiceMockitoTesting {
 
@@ -37,16 +38,30 @@ public class PaymentServiceMockitoTesting {
     @Test
     void testAddPaymentWithValidData() throws Exception {
         Payment payment1 = new Payment(1, PaymentType.CARD,100);
-        Payment payment2 = new Payment(2, PaymentType.CASH,100);
-        Mockito.when(paymentRepository.getAll()).thenReturn(Collections.singletonList((payment2)));
-        Mockito.doNothing().when(paymentRepository).add(payment1);
 
-        paymentService.addPayment(1, PaymentType.CARD,100);
+        paymentRepository.add(payment1);
+        Mockito.doReturn(Collections.singletonList(payment1)).when(paymentRepository).getAll();
 
-        Mockito.verify(paymentRepository,Mockito.times(1)).add(payment1);
-        Mockito.verify(paymentRepository,Mockito.never()).getAll();
+        List<Payment> payments = paymentService.getPayments();
 
-        assertEquals(1,paymentService.getPayments().size());
-        Mockito.verify(paymentRepository,Mockito.times(2)).getAll();
+        Mockito.verify(paymentRepository,Mockito.times(1)).getAll();
+        assertEquals(1,payments.size());
+        assertEquals(payment1,payments.get(0));
+        paymentService.removeAllPayments();
+    }
+
+    @Test
+    void testAddPaymentWithInvalidData() throws Exception {
+        try {
+            paymentService.addPayment(-4, PaymentType.CARD, 10);
+            fail();
+        } catch (Exception e) {
+        }
+        Mockito.doReturn(Collections.emptyList()).when(paymentRepository).getAll();
+        List<Payment> payments = paymentService.getPayments();
+
+        Mockito.verify(paymentRepository,Mockito.times(1)).getAll();
+        assertEquals(0,payments.size());
+        paymentService.removeAllPayments();
     }
 }
