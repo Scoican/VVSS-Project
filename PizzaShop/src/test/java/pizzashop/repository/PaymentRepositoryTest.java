@@ -12,7 +12,6 @@ class PaymentRepositoryTest {
 
     private String filePath = "C:\\Users\\Scoican\\Desktop\\Work\\Validation and verification of software systems\\VVSS-Project\\PizzaShop\\src\\main\\resources\\data\\paymentsTest.txt";
 
-
     @Test
     void testAddValidPayment() {
         Payment payment = mock(Payment.class);
@@ -23,6 +22,7 @@ class PaymentRepositoryTest {
         } catch (Exception e) {
             fail();
         }
+        paymentRepository.EmptyFile();
     }
 
     @Test
