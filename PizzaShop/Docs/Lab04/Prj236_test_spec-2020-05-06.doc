@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>testspec Prj236 - pmir2368_IntT</title>
+<link type="text/css" rel="stylesheet" href="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo" height="53" src="https://www.scs.ubbcluj.ro/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></div>
+<div class="doc_title"><p>Test Specification</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Prj236<br>Test Suite: Prj236 - pmir2368_IntT</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 06/05/2020</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><b><p style="padding-left: 20px;"><a href="#toc_1">1. pmir2368_IntT</a></p></b>
+<p style="padding-left: 45px;"><a href="#toc_tc48032">Prj236-188: testAddValidPayment</a></p><p style="padding-left: 45px;"><a href="#toc_tc48034">Prj236-189: testAddNullPayment</a></p><p style="padding-left: 45px;"><a href="#toc_tc48046">Prj236-191: testAddPaymentWithValidData</a></p><p style="padding-left: 45px;"><a href="#toc_tc48048">Prj236-192: testAddPaymentWithInvalidData</a></p><p style="padding-left: 45px;"><a href="#toc_tc48051">Prj236-193: testAddPaymentWithValidDataERS</a></p><p style="padding-left: 45px;"><a href="#toc_tc48054">Prj236-194: testAddPaymentWithInvalidDataERS</a></p></div><h1 class="doclevel" >Scope</h1>
+<div class="txtlevel"><p>
+	Testing project for group 236</p></div>
+ <br/><a name='toc_1'></a>
+<h1 class='doclevel'>1. Test Suite : pmir2368_IntT</h1>
+<a name="toc_tc48032"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj236-188: testAddValidPayment</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">pmir2368</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	Verifică dacă plata adăugată are parametri valizi.</p>
+</td></tr><tr><td colspan="3"><span class="label">Preconditions:</span><br /><p>
+	Plata este de forma:&nbsp;<span class="pl-smi" style="box-sizing: border-box; color: rgb(36, 41, 46); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; white-space: pre; background-color: rgb(255, 255, 255);"><span class="pl-token" data-hydro-click="{&quot;event_type&quot;:&quot;code_navigation.click_on_symbol&quot;,&quot;payload&quot;:{&quot;action&quot;:&quot;click_on_symbol&quot;,&quot;repository_id&quot;:244927887,&quot;ref&quot;:&quot;master&quot;,&quot;language&quot;:&quot;Java&quot;,&quot;originating_url&quot;:&quot;https://github.com/Scoican/VVSS-Project/blob/master/PizzaShop/src/test/java/pizzashop/repository/PaymentRepositoryTest.java?_pjax=%23js-repo-pjax-container&quot;,&quot;user_id&quot;:58311346}}" data-hydro-click-hmac="4fa56a0cc4ffb9e1c77919adc42c09f0152fef6a0d97080114fcc8de1ae41de5" style="box-sizing: border-box;">Payment</span></span><span style="color: rgb(36, 41, 46); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; white-space: pre; background-color: rgb(255, 255, 255);">(</span><span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 92, 197); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; white-space: pre; background-color: rgb(255, 255, 255);">1</span><span style="color: rgb(36, 41, 46); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; white-space: pre; background-color: rgb(255, 255, 255);">, </span><span class="pl-smi" style="box-sizing: border-box; color: rgb(36, 41, 46); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; white-space: pre; background-color: rgb(255, 255, 255);">PaymentType</span><span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 92, 197); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; white-space: pre; background-color: rgb(255, 255, 255);"><span class="pl-k" style="box-sizing: border-box; color: rgb(215, 58, 73);">.</span>CARD</span><span style="color: rgb(36, 41, 46); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; white-space: pre; background-color: rgb(255, 255, 255);">, </span><span class="pl-c1" style="box-sizing: border-box; color: rgb(0, 92, 197); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; white-space: pre; background-color: rgb(255, 255, 255);">10</span><span style="color: rgb(36, 41, 46); font-family: SFMono-Regular, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; font-size: 12px; white-space: pre; background-color: rgb(255, 255, 255);">).</span></p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" >pizzashop.repository.PaymentRepositoryTest#testAddValidPayment</td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" >pizzashop.repository.PaymentRepositoryTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">pmir2368_F01:  Adăugare plată<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+<a name="toc_tc48034"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj236-189: testAddNullPayment</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">pmir2368</td></tr>
+<tr><td colspan="3"><span class="label">Summary:</span><br /><p>
+	<span style="font-family: &quot;Trebuchet MS&quot;, Arial, Verdana, sans-serif; font-size: 11.7px; background-color: rgb(238, 238, 238);">Verifică dacă plata adăugată are parametri valizi.</span></p>
+</td></tr><tr><td colspan="3"><span class="label">Preconditions:</span><br /><p>
+	Plata este un obiect null.</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" >pizzashop.repository.PaymentRepositoryTest#testAddNullPayment</td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" >pizzashop.repository.PaymentRepositoryTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">pmir2368_F01:  Adăugare plată<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+<a name="toc_tc48046"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj236-191: testAddPaymentWithValidData</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">pmir2368</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" >pizzashop.service.IntegrationRSTest#testAddPaymentWithValidData</td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" >pizzashop.service.IntegrationRSTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">pmir2368_F01:  Adăugare plată<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+<a name="toc_tc48048"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj236-192: testAddPaymentWithInvalidData</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">pmir2368</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" >pizzashop.service.IntegrationRSTest#testAddPaymentWithInvalidData</td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" >pizzashop.service.IntegrationRSTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">pmir2368_F01:  Adăugare plată<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+<a name="toc_tc48051"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj236-193: testAddPaymentWithValidDataERS</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">pmir2368</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" >pizzashop.service.IntegrationERSTest#testAddPaymentWithValidData</td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" >pizzashop.service.IntegrationERSTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">pmir2368_F01:  Adăugare plată<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+<a name="toc_tc48054"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="3">Test Case Prj236-194: testAddPaymentWithInvalidDataERS</th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="2">pmir2368</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="2">Automated</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="2"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="2">Medium</td></tr>
+<tr><td colspan="3"></td></tr><tr><td > name of the test method:</td><td  colspan = "2" >pizzashop.service.IntegrationERSTest#testAddPaymentWithInvalidData</td></tr>
+<tr><td > name of the autotest class:</td><td  colspan = "2" >pizzashop.service.IntegrationERSTest</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="2">pmir2368_F01:  Adăugare plată<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span><td colspan="2">&nbsp;None<br></td></tr>
+</table>
+</div>
+
+</body>
+</html>
