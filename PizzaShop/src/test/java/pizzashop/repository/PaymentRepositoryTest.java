@@ -15,7 +15,7 @@ class PaymentRepositoryTest {
 
     @Test
     void testAddValidPayment() {
-        Payment payment = new Payment(1, PaymentType.CARD, 10);
+        Payment payment = mock(Payment.class);
         PaymentRepository paymentRepository = new PaymentRepository(filePath);
         try {
             paymentRepository.add(payment);
